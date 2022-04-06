@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="My Page Description">
+        <title>Home Page</title>
+        <link href="./css/bootstrap.css" rel="stylesheet">
+        <%- include('./style')  %>
+    </head>
+    <body>
+       <%- include('./template/navbar')  %> 
+        <div class="container">
+            <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1592671963996-0b4616e9f042?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80'); height: 300px;"></div>
+            <h1 >PRICING AND TEST TYPES</h1>
+                <div class="card my-antigen mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Free Antigen Covid-19 Tests</h5>
+                      <table>
+                        <tr>
+                            <td>Results in 20 minutes</td>
+                        </tr>
+                        <tr>
+                            <td>0€</td>
+                        </tr>
+                    </table>
+                    </div>
+                  </div>
+                  
+                  <div class="card my-pcr mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">RT-PCR tests</h5>
+                      <table>
+                        <tr>
+                            <td>Normal (Results in 24 hours)</td>
+                        </tr>
+                        <tr>
+                            <td>25€</td>
+                        </tr>
+                        <tr>
+                            <td>Express (results in 6 hours)</td>
+                        </tr>
+                        <tr>
+                            <td>60€</td>
+                        </tr>
+                    </table>
+                    </div>
+                  </div>
+                
+        </div>
+        <!--About tests-->
+        <!--"NAV" is being displayed-->
+        <div class="about-tests">
+            <h1>OUR TESTS</h1>
+            <div class="about-pcr">
+                <h2>RT PCR TEST</h2>
+                <p>With the standard RT-PCR test, you usually get the result within 36 hours* - often much faster! With Express, you usually get the result within 6 hours* and with SameDay, you usually get the result on the same day (late at night)*. OEGD testing (free RT-PCR testing may take up to 48 hours). The security of the results is always our priority.</p>
+            </div>
+            <div class="about-antigen">
+                <h2>ANTIGEN RAPID TEST</h2>
+                <p>Most travel countries now only require a negative rapid test result for entry for unvaccinated persons. The same applies to locations that make the so-called 3G rule a prerequisite for access. 3G stands for vaccinated, recovered or tested. 2G+ for Vaccinated and Tested. This can be restaurants as well as theaters or fitness clubs and other locations. In these cases, our official certificate gives you access - to the location or to...</p>
+            </div>
+        </div>
+        <!--Stations-->
+        <!--"NAV" is being displayed-->
+        <div class="our-stations">
+            <h1>OUR STATIONS</h1>
+                <div class="station1">
+                    <p>Station 1</p>
+                </div>
+                <div class="station2">
+                    <p>Station 2</p>
+                </div>
+                <div class="station3">
+                    <p>Station 3</p>
+                </div>
+                <div class="station4">
+                    <p>Station 4</p>
+                </div>
+        </div>
+         <!--FAQ-->
+        <!--"NAV" is being displayed-->
+        <div class="faq">
+            <h2>Frequently asked questions</h2> <!--Should display the answer oncick-->
+            <p>Do i need an appointment?</p>
+            <p>When and how do i recieve the results?</p>
+            <p>Extra</p>
+            <p>Extra</p>
+            <label>Have a quetion? Ask us!</label>
+            <input type="text" required>
+            <button>Send a question</button>
+        </div>
+        <%- include('./template/footer') %>
+    </body>
+</html>
