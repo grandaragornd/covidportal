@@ -1,18 +1,78 @@
 
 <%- include('template/headerpage') %>
     <body>
+        <div class="container">
         <%- include('./template/navbar')  %> 
         <h1>Our tests</h1>
-        
-        <div class="rapid-antigen">
-            <a href="/booking/antigen"><h1>Rapid antigen test</h1></a>
-        </div>
-        <div class="pcr">
-            <a href="/booking/pcr"><h1>Normal PCR Test</h1></a>
-        </div>
-        <div class="pcr-express">
-            <a href="/booking/pcr-express"><h1>Express PCR Test</h1></a>
+
+        <div class="card text-center my-nav">
+            <div class="card-body">
+              <h5 class="card-title">Rapid antigen test</h5>
+              <p class="card-text">Selected station:</p>
+              <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck1">Station 1</label>
+              
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck2">Station 2</label>
+              
+                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck3">Station 3</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck4">Station 4</label>
+              </div>
+              <br />
+              <a href="/booking/antigen" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+
+          <div class="card text-center my-nav">
+            <div class="card-body">
+              <h5 class="card-title">Normal PCR Test</h5>
+              <p class="card-text">Selected station:</p>
+              <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck1">Station 1</label>
+              
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck2">Station 2</label>
+              
+                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck3">Station 3</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck4">Station 4</label>
+              </div>
+              <br />
+              <a href="/booking/pcr" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+
+          <div class="card text-center my-nav">
+            <div class="card-body">
+              <h5 class="card-title">Express PCR Test</h5>
+              <p class="card-text">Selected station:</p>
+              <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck1">Station 1</label>
+              
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck2">Station 2</label>
+              
+                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck3">Station 3</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck4">Station 4</label>
+              </div>
+              <br />
+              <a href="/booking/pcr-express" class="btn btn-primary">Book now</a>
+            </div>
+          </div>
+
         </div>
     </body>
+    <br />
     <%- include('./template/footer') %>
 </html>

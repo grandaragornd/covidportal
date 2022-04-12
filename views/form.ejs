@@ -1,24 +1,40 @@
 <%- include('template/headerpage') %>
 <body>
-    <%- include('./template/navbar')  %> 
-    <h1>Form</h1>
-    <div class="container">
-        <label>Name</label>
-        <input type="text" required mehtod="POST">
-        <br>
-        <br>
-        <label>Last Name</label>
-        <input type="text" required mehtod="POST">
-        <br>
-        <br>
-        <label>Passport/ID</label>
-        <input type="text" required mehtod="POST">
-        <br>
-        <br>
-        <label>Birthdate</label>
-        <input type="text" required mehtod="POST">
-    </div>
+    <%- include('./template/navbar') %> 
     
+    <div class="container">
+        <h1>Form</h1>
+        <h3>Personal Information</h3>
+        <form action="/steps/submited" method="POST">
+            <label>Name</label>
+            <input type="text" name="name" required>
+            <br />
+            <label>Last Name</label>
+            <input type="text" name="lastname" required>
+            <br />
+            <label>Passport/ID</label>
+            <input type="text" name="passid">
+            <br />
+            <label>Email</label>
+            <input type="text" name="email"/>
+            <br />
+            <label>Birthdate</label>
+            <input type="date" name="birthdate" placeholder="DD.MM.YYYY" max="2022-04-11" >
+            <br />
+        <h3>Adress</h3>
+            <label>Street and number</label>
+            <input type="text" name="street" required>
+            <br />
+            <label>Postal code</label>
+            <input type="text" name="postal" required>
+            <br />
+            <label>City</label>
+            <input type="text" name="city" required>
+            <br />
+            <button type="submit">Submit</button>//
+            <button type="reset">Reset</button>
+        </form>
+    </div>
 </body>
 <%- include('./template/footer') %>
 </html>

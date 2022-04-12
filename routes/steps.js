@@ -14,4 +14,10 @@ router.get('/form', (req, res) => {
     res.render('form.ejs', {title: 'Your Form'})
 })
 
+router.get('/submited', (req, res) => {
+    console.log('test submitted')
+    res.render('submited.ejs', {title: 'Your form has been sent'})
+})
+
+
 module.exports = router
