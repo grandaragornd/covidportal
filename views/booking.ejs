@@ -1,26 +1,20 @@
-
+ <% 
+ console.log('klk')
+ %> 
 <%- include('template/headerpage') %>
     <body>
         <div class="container">
         <%- include('./template/navbar')  %> 
         <h1>Our tests</h1>
-
         <div class="card text-center my-nav">
             <div class="card-body">
               <h5 class="card-title">Rapid antigen test</h5>
-              <p class="card-text">Selected station:</p>
+              <p class="card-text">Selected station: <%= stationselector %> </p>
               <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck1">Station 1</label>
-              
-                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck2">Station 2</label>
-              
-                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck3">Station 3</label>
-
-                <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck4">Station 4</label>
+                <button type="button" class="btn btn-outline-primary">Station 1</button>
+                <button type="button" class="btn btn-outline-primary">Station 2</button>
+                <button type="button" class="btn btn-outline-primary">Station 3</button>
+                <button type="button" class="btn btn-outline-primary">Station 4</button>
               </div>
               <br />
               <a href="/booking/antigen" class="btn btn-primary">Book now</a>
@@ -30,19 +24,12 @@
           <div class="card text-center my-nav">
             <div class="card-body">
               <h5 class="card-title">Normal PCR Test</h5>
-              <p class="card-text">Selected station:</p>
+              <p class="card-text">Selected station: <%= stationselector %> </p>
               <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck1">Station 1</label>
-              
-                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck2">Station 2</label>
-              
-                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck3">Station 3</label>
-
-                <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck4">Station 4</label>
+                <button type="button" class="btn btn-outline-primary stat1">Station 1</button>
+                <button type="button" class="btn btn-outline-primary stat2">Station 2</button>
+                <button type="button" class="btn btn-outline-primary stat3">Station 3</button>
+                <button type="button" class="btn btn-outline-primary stat4">Station 4</button>
               </div>
               <br />
               <a href="/booking/pcr" class="btn btn-primary">Book now</a>
@@ -52,19 +39,12 @@
           <div class="card text-center my-nav">
             <div class="card-body">
               <h5 class="card-title">Express PCR Test</h5>
-              <p class="card-text">Selected station:</p>
+              <p class="card-text">Selected station: <%= stationselector %> </p>
               <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck1">Station 1</label>
-              
-                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck2">Station 2</label>
-              
-                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck3">Station 3</label>
-
-                <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck4">Station 4</label>
+                <button type="button" class="btn btn-outline-primary stat1">Station 1</button>
+                <button type="button" class="btn btn-outline-primary stat2">Station 2</button>
+                <button type="button" class="btn btn-outline-primary stat3">Station 3</button>
+                <button type="button" class="btn btn-outline-primary stat4">Station 4</button>
               </div>
               <br />
               <a href="/booking/pcr-express" class="btn btn-primary">Book now</a>

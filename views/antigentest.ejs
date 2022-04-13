@@ -1,9 +1,18 @@
 <%- include('template/headerpage') %>
     <body>
-        <%- include('./template/navbar')  %> 
-        <h1>Antigen test </h1>
-        <p>procedure</p>
-        <a href="/steps"><button>Proceed to steps</button></a>
+        <%- include('./template/navbar')  %>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Antigen test </h1>
+                <%- include('./template/progressbar')  %>
+                </div>
+                <%- include('./template/timedate') %>
+            </div>
+            <br>
+            <a href="/booking/antigen/antigenform"><button type="button" class="btn btn-outline-primary container">Fill Form</button></a>
+        </div>
     </body>
+    <br>
     <%- include('./template/footer') %>
 </html>

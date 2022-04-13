@@ -1,8 +1,18 @@
 <%- include('template/headerpage') %>
     <body>
         <%- include('./template/navbar')  %>
-        <h1>Express PCR</h1>
-        <a href="/steps"><button>Booking steps</button></a>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>PCR Express test</h1>
+                <%- include('./template/progressbar')  %>
+                </div>
+                <%- include('./template/timedate') %>
+            </div>
+        </div>
+        <br>
+        <a href="/booking/pcr-express/pcrexpressform"><button type="button" class="btn btn-outline-primary container">Fill Form</button></a>
+        <br>
     </body>
     <%- include('./template/footer') %>
 </html>
