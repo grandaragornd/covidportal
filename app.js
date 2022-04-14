@@ -42,7 +42,7 @@ app.listen(port, (req, res) => {
 })
 
 //post
-app.post('/booking/submited', async (req, res) => {
+app.post('/', async (req, res) => {
   const body = req.body
   console.log(body)
 })
